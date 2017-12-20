@@ -1,0 +1,21 @@
+{
+  "lerna": "2.0.0-beta.40-spotim",
+  "version": "3.0.350-comm.topics-hPDwMlpz.0",
+  "commands": {
+    "init": {
+      "exact": true
+    },
+    "publish": {
+      "exact": true,
+      "ignore": [
+        "@spotim/fed-traffic",
+        "@spotim/fed-topics",
+        "@spotim/fed-context-hub",
+        "@spotim/fed-convo-ticker"
+      ]
+    }
+  },
+  "packages": [
+    "packages/*"
+  ]
+}
