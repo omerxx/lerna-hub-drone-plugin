@@ -1,19 +1,18 @@
 package main
 
 import (
-    "fmt"
     "io/ioutil"
     "encoding/json"
-    "os/exec"
     "os"
     "os/exec"
+    "syscall"
 )
 
 
 func main() {
     lerna := make(map[string]string)
     tempReader, _ := ioutil.ReadFile("lerna.json")
-    json.Unmarshal(tempReader, &ec2Instances)
+    json.Unmarshal(tempReader, &lerna )
     version := lerna["version"]
 
     binary, lookErr := exec.LookPath("lerna")
